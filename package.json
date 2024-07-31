@@ -1,0 +1,36 @@
+{
+  "name": "agenciaviajesnode",
+  "version": "1.0.0",
+  "description": "Primer proyecto con Node.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch controllers --watch models --watch views --watch public --watch routes --watch index.js index.js",
+    "start": "node index.js"
+
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Rony Miranda",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "pug": "^3.0.3",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "controllers",
+      "models",
+      "views",
+      "public",
+      "routes",
+      "index.js"
+    ],
+    "ext": "js,pug,css"
+  }
+}
