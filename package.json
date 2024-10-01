@@ -6,13 +6,13 @@
   "scripts": {
     "dev": "nodemon --watch controllers --watch models --watch views --watch public --watch routes --watch index.js index.js",
     "start": "node index.js"
-
   },
   "type": "module",
   "keywords": [],
   "author": "Rony Miranda",
   "license": "ISC",
   "dependencies": {
+    "agenciaviajesnode": "file:",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mysql2": "^3.11.0",
